@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script language="javascript" type="text/javascript">
+        document.write('<h1><b>this is script tag of javascript</b></h1>')
+        var x = 16+4+'xyz';
+        document.write(x);
+        document.write('<br>')
+        var a='abc';
+        var b=12;
+        var c=true;
+        document.write(typeof(a));
+        document.write('<br>')
+        document.write(typeof(b));
+        document.write('<br>')
+        document.write(typeof(c));
+        document.write('<br>')
+
+
+        if(a=='bc')
+        {
+            document.write('manav')
+        }
+
+
+        var age=20
+        if(age>18)
+        {
+            document.write('you are elligible for voting')
+        }
+        else if(age==18)
+        {
+            document.write('you aresfg just 18')
+        }
+        else if(age==18)
+        {
+            document.write('you are just 18')
+        }
+        else{
+            document.write('you are not elligible for voting')
+        }
+
+
+
+        document.write('<br>')
+        var sub=45
+        if(sub=='fsd')
+        {
+            document.write('ZPB')
+        }
+        else if(sub=='de'){
+            document.write('KSP')
+        }
+        else if(sub=='ps')
+        {
+            document.write('FAT')
+        }
+        else if(sub=='fcsp')
+        {
+            document.write('PDS')
+        }
+        else if(sub=='etc')
+        {
+            document.write('JMA')
+        }
+        else
+        {
+            document.write('wrong choice')
+        }
+
+
+
+        document.write('<br>')
+        var count=0
+        while(count<10)
+        {
+            document.write('current count is'+count+'<br>')
+            count++
+        }
+
+
+
+        document.write('<br>')
+        document.write('<br>')
+        for(i=count;i<=20;i++)
+        {
+            document.write('currrrrrent count is'+count+'<br>')
+            count++
+        }
+
+
+
+        count=0
+        document.write('<br>')
+        do{
+            document.write('currenttttt count is'+count+'<br>')
+            count++
+        }while(count<10)
+
+        document.write('<br>')
+
+        var x=1
+        while(x<=10)
+        {
+            document.write('current count is--'+x+'<br>')
+            if(x==6)
+            {
+                break
+            }
+            x++
+        }
+       var y = 0
+       while(y<=10)
+       {
+        y++
+        if(y==5)
+        {
+            continue;
+        }
+        document.write('current count is{}'+y+'<br>')
+       }
+       var grade='f'
+       switch(grade)
+       {
+        case 'a':document.write('good job')
+        break
+
+        case 'b':document.write('pretty good')
+        break
+
+        case 'c':document.write('passed')
+        break
+
+        case 'd':document.write('not so bad')
+        break
+
+        case 'e':document.write('failed')
+        break
+
+        default:document.write('unknown grade')
+       }
+       function hello(name,age){
+        document.write(name+' is '+age+' years old')
+       }
+       function info(n,a)
+       {
+        var f
+        f=n+a
+        return f
+       }
+       function hilo()
+       {
+        var res
+        res=info('manav',19)
+        document.write(res)
+       }
+       document.write('<hr>')
+       var arr=['abc','def',10,11,'ghi','jkl',12,13];
+       for(i=0;i<arr.length;i++)
+       {
+        document.write(arr[i]+"<br>")
+       }
+       document.write('<hr>')
+       var arr1= new Array();
+       arr1[2]=30
+       arr1[0]=10
+       arr1[1]=20
+       arr1[5]=40
+       document.write(arr1.length+'this is length'+'<br>')
+       for(i=0;i<arr1.length;i++)
+       {
+        document.write(arr1[i]+"<br>")
+       }
+       document.write('<hr>')
+       var arr2=new Array(50,40,30,100,10)
+       document.write(arr2)
+       document.write('<hr>')
+
+
+    </script>
+</head>
+<body>
+    <input type="button" onclick="hello('manav',19)" value="age">
+    <button onclick="hilo()">click me</button>
+    
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function f(a,b,...args)
+        {
+            console.log(args);
+        }
+        f(1,2,3,4,5,6,7,8);
+
+
+
+        marks=[80,90,70]
+        for(let mark of marks)
+        {
+            console.log(mark);
+        }
+
+
+
+        let colors=['red','green','blue'];
+        for(const[index,color] of colors.entries())
+        {
+            console.log(`${color} is at index ${index}`);
+        }
+
+
+
+        marks=[10,20,30];
+        for(let mark in marks)
+        {
+            console.log(mark);
+        }
+
+
+
+// map
+        let map=new Map();
+        map.set('abc','Faculty')
+        map.set('xyz','Dean')
+        console.log(map)
+        map.set('pqr','Peon')
+        map.set('jkl','Admin')
+        console.log(map);
+        map.delete('pqr')
+        console.log(map)
+        map.set('pqr','swipper');
+        console.log(map)
+        map.set('abc','manav')
+        console.log(map)
+
+// some string functions
+        for(i of map)
+        {
+            console.log(i);
+        }
+        s='this is demo'
+        s1='AAA'
+        s2='ABC'
+        console.log(`startsWith`)
+// for stratsWith index starts with 0
+        console.log(s.startsWith('this'));  
+        console.log(s.startsWith('s',5));
+        console.log(s.startsWith('d',8));
+// for endsWith index starts with 1
+        console.log(`endsWith`)
+        console.log(s.endsWith('demo'));
+        console.log(s.endsWith('demo',12));
+        console.log(s.endsWith('is',7));
+// includes
+        console.log(`includes`)
+        console.log(s.includes('this'));
+        console.log(s.includes('this is demo'))
+// locale
+        console.log('locale')
+        console.log(s2.localeCompare(s1));
+// using Javascript's normal function
+        console.log(`using javascript`)
+        function getscore()
+        {
+            return[90,80,70]
+        }
+        let success=getscore();
+        let scores=getscore();
+        let x = scores[0];
+        let y = scores[1];
+        let z = scores[2];
+        console.log(`x=${x},y=${y},z=${z}`)
+// using ecma script function
+        console.log(`using ecmascript`)
+        esfun=()=>
+        {
+            return[10,20,30]
+        }
+        let[p,q,r] = esfun();
+        console.log(`x = ${p} 
+y = ${q}
+z = ${r}`);
+// constructor and constructor function
+        class person
+        {
+            constructor(n,a)
+            {
+                this.name=n;
+                this.age=a;
+            }
+            getname=()=>
+            {
+                console.log(this.age);
+                return this.name;
+            }
+        }
+        let obj = new person('xyz',29);
+        console.log(obj.getname())
+// 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
